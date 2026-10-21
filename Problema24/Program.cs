@@ -1,3 +1,4 @@
+Console.Write("Ingrese el día de la semana como número (1-7): ");
 int dia = int.Parse(Console.ReadLine() ?? string.Empty);
 
 string tipoDia = dia switch
