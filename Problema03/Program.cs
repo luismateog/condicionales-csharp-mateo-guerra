@@ -1,3 +1,4 @@
+Console.Write("Ingrese una opción (1-4): ");
 int opcion = int.Parse(Console.ReadLine() ?? string.Empty);
 
 string mensaje = opcion switch
