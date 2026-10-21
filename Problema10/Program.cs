@@ -1,5 +1,6 @@
 using System.Globalization;
 
+Console.Write("Ingrese un dato (texto, número o booleano): ");
 string entrada = Console.ReadLine() ?? string.Empty;
 object dato;
 
