@@ -1,9 +1,11 @@
 using System.Globalization;
 
 CultureInfo cultura = CultureInfo.GetCultureInfo("es-CO");
+Console.Write("Ingrese su peso en kg: ");
 decimal peso = decimal.Parse(
     (Console.ReadLine() ?? string.Empty).Replace(',', '.'),
     CultureInfo.InvariantCulture);
+Console.Write("Ingrese su estatura en metros: ");
 decimal estatura = decimal.Parse(
     (Console.ReadLine() ?? string.Empty).Replace(',', '.'),
     CultureInfo.InvariantCulture);
