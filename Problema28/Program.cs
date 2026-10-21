@@ -1,9 +1,11 @@
 using System.Globalization;
 
 CultureInfo cultura = CultureInfo.GetCultureInfo("es-CO");
+Console.Write("Ingrese el valor de la compra: ");
 decimal compra = decimal.Parse(
     (Console.ReadLine() ?? string.Empty).Replace(',', '.'),
     CultureInfo.InvariantCulture);
+Console.Write("¿Es cliente frecuente? (si/no): ");
 string respuestaFrecuente = (Console.ReadLine() ?? string.Empty).Trim().ToLowerInvariant();
 bool esClienteFrecuente = respuestaFrecuente is "si" or "sí";
 
