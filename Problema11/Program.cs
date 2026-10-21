@@ -1,3 +1,4 @@
+Console.Write("Ingrese el estado del semáforo (Rojo, Amarillo o Verde): ");
 string entrada = Console.ReadLine() ?? string.Empty;
 if (Enum.TryParse(entrada, ignoreCase: true, out EstadoSemaforo estado))
 {
