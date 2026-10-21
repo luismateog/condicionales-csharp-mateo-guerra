@@ -28,6 +28,10 @@ string mencion = promedio == 100 ? " | ¡Mención de honor!" : string.Empty;
 Console.WriteLine(
     $"Promedio: {promedio.ToString("0.0", cultura)} | Letra: {letra} | {retroalimentacion} | {estado}{mencion}");
 
-decimal LeerNota() => decimal.Parse(
-    (Console.ReadLine() ?? string.Empty).Replace(',', '.'),
-    CultureInfo.InvariantCulture);
+decimal LeerNota()
+{
+    Console.Write("Ingrese una nota de 0 a 100: ");
+    return decimal.Parse(
+        (Console.ReadLine() ?? string.Empty).Replace(',', '.'),
+        CultureInfo.InvariantCulture);
+}
