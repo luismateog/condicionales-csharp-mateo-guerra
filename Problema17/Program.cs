@@ -1,3 +1,4 @@
+Console.Write("Ingrese un comando (play, pause, stop o next): ");
 string comando = (Console.ReadLine() ?? string.Empty).Trim().ToLowerInvariant();
 
 string mensaje = comando switch
