@@ -1,3 +1,4 @@
+Console.Write("Ingrese la velocidad registrada en km/h: ");
 int velocidad = int.Parse(Console.ReadLine() ?? string.Empty);
 
 string sancion = velocidad switch
