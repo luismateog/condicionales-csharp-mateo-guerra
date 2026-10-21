@@ -1,5 +1,6 @@
 using System.Globalization;
 
+Console.Write("Ingrese la nota del aprendiz: ");
 decimal nota = decimal.Parse(
     (Console.ReadLine() ?? string.Empty).Replace(',', '.'),
     CultureInfo.InvariantCulture);
