@@ -1,33 +1,22 @@
-﻿using System;
+using System.Globalization;
 
+decimal peso = decimal.Parse(
+    (Console.ReadLine() ?? string.Empty).Replace(',', '.'),
+    CultureInfo.InvariantCulture);
 
-
-Console.WriteLine("Cuantos quilos vas a llebar?: ");
-float kilo = float.Parse(Console.ReadLine());
-if (kilo < 1 && kilo > 0)
+if (peso <= 0)
 {
-    decimal tarifa = 8000;
-    Console.WriteLine($"{tarifa:C0}");
-}
-else if (kilo >= 1 && kilo < 5 )
-{
-    decimal tarifa = 15000;
-    Console.WriteLine($"{tarifa:C0}");
-    
-}
-else if (kilo >= 5 && kilo < 20)
-{
-    decimal tarifa = 32000;
-    Console.WriteLine($"{tarifa:C0}");
-    
-}
-else if (kilo >= 20)
-{
-    decimal tarifa = 60000;
-    Console.WriteLine($"{tarifa:C0}");
-    
+    Console.WriteLine("Peso inválido");
 }
 else
 {
- Console.WriteLine("invalido");
+    decimal tarifa = peso switch
+    {
+        < 1 => 8000,
+        < 5 => 15000,
+        < 20 => 32000,
+        _ => 60000
+    };
+
+    Console.WriteLine($"${tarifa.ToString("N0", CultureInfo.GetCultureInfo("es-CO"))}");
 }
