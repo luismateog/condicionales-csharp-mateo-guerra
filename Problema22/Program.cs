@@ -1,7 +1,10 @@
 using System.Globalization;
 
+Console.Write("Ingrese el primer número entero: ");
 int numero1 = int.Parse(Console.ReadLine() ?? string.Empty);
+Console.Write("Ingrese el segundo número entero: ");
 int numero2 = int.Parse(Console.ReadLine() ?? string.Empty);
+Console.Write("Ingrese la operación (+, -, * o /): ");
 char operador = (Console.ReadLine() ?? string.Empty).Trim()[0];
 
 double resultado = operador switch
