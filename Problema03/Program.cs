@@ -1,26 +1,12 @@
-﻿using System;
-bool iniciar = true;
-while(iniciar)
+int opcion = int.Parse(Console.ReadLine() ?? string.Empty);
+
+string mensaje = opcion switch
 {
-    
-Console.WriteLine($"----------Menu-----------\n1 = consultar saldo.\n2 = Retirar.\n3 = Depositar.\n4 = Salir");
-    byte opcion = byte.Parse(Console.ReadLine());
-    switch(opcion)
-    {
-        case 1:
-        Console.WriteLine("Has elegido consultar saldo\n");
-        break;
+    1 => "Ha seleccionado: Consultar saldo",
+    2 => "Ha seleccionado: Retirar",
+    3 => "Ha seleccionado: Depositar",
+    4 => "Ha seleccionado: Salir",
+    _ => "Opción no válida"
+};
 
-        case 2:
-        Console.WriteLine("Has elegido retirar saldo\n");
-        break;
-
-        case 3:
-        Console.WriteLine("Has elegido depositar saldo\n");
-        break;
-
-        case 4:
-        Console.WriteLine("Has elegido salir\n");
-        break;
-    }
-}
+Console.WriteLine(mensaje);
