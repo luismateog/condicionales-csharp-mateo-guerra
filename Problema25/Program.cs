@@ -1,3 +1,4 @@
+Console.Write("Ingrese el índice de calidad del aire: ");
 int indice = int.Parse(Console.ReadLine() ?? string.Empty);
 
 string categoria = indice switch
