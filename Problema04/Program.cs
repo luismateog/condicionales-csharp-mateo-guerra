@@ -1,3 +1,4 @@
+Console.Write("Ingrese el nivel de batería (0-100): ");
 int nivelBateria = int.Parse(Console.ReadLine() ?? string.Empty);
 
 if (nivelBateria < 15)
