@@ -1,5 +1,6 @@
 using System.Globalization;
 
+Console.Write("Ingrese el día de la semana: ");
 string dia = (Console.ReadLine() ?? string.Empty)
     .Trim()
     .ToLowerInvariant()
@@ -8,6 +9,7 @@ string dia = (Console.ReadLine() ?? string.Empty)
     .Replace('í', 'i')
     .Replace('ó', 'o')
     .Replace('ú', 'u');
+Console.Write("¿Es estudiante? (si/no): ");
 string respuestaEstudiante = (Console.ReadLine() ?? string.Empty).Trim().ToLowerInvariant();
 bool esEstudiante = respuestaEstudiante is "si" or "sí";
 
