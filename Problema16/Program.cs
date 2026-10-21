@@ -1,4 +1,6 @@
+Console.Write("Ingrese la coordenada X: ");
 int x = int.Parse(Console.ReadLine() ?? string.Empty);
+Console.Write("Ingrese la coordenada Y: ");
 int y = int.Parse(Console.ReadLine() ?? string.Empty);
 
 if (x == 0 && y == 0)
