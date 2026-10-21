@@ -1,0 +1,8 @@
+using System.Globalization;
+
+decimal nota = decimal.Parse(
+    (Console.ReadLine() ?? string.Empty).Replace(',', '.'),
+    CultureInfo.InvariantCulture);
+
+string estado = nota >= 3.0m ? "Aprobado" : "Reprobado";
+Console.WriteLine($"Nota: {nota.ToString("0.0", CultureInfo.GetCultureInfo("es-CO"))} - {estado}");
