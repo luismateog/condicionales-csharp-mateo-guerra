@@ -1,3 +1,4 @@
+Console.Write("Ingrese una letra: ");
 string entrada = Console.ReadLine() ?? string.Empty;
 char caracter = entrada.Length > 0 ? char.ToLowerInvariant(entrada[0]) : '\0';
 
