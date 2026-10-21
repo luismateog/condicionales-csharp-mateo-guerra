@@ -1,3 +1,4 @@
+Console.Write("Ingrese el código del país (CO, MX, AR, PE o CL): ");
 string codigo = (Console.ReadLine() ?? string.Empty).Trim().ToUpperInvariant();
 
 string pais = codigo switch
