@@ -1,5 +1,6 @@
 using System.Globalization;
 
+Console.Write("Ingrese la categoría del vehículo (M, A, B o C): ");
 char categoria = char.ToUpperInvariant(
     (Console.ReadLine() ?? string.Empty).Trim()[0]);
 
