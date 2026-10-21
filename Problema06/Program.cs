@@ -1,4 +1,6 @@
+Console.Write("Jugador 1, ingrese piedra, papel o tijera: ");
 string jugada1 = (Console.ReadLine() ?? string.Empty).Trim().ToLowerInvariant();
+Console.Write("Jugador 2, ingrese piedra, papel o tijera: ");
 string jugada2 = (Console.ReadLine() ?? string.Empty).Trim().ToLowerInvariant();
 
 if (jugada1 == jugada2)
