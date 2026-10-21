@@ -1,5 +1,6 @@
 using System.Globalization;
 
+Console.Write("Ingrese el peso del paquete en kg: ");
 decimal peso = decimal.Parse(
     (Console.ReadLine() ?? string.Empty).Replace(',', '.'),
     CultureInfo.InvariantCulture);
