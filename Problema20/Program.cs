@@ -1,3 +1,4 @@
+Console.Write("Ingrese el número del mes (1-12): ");
 int mes = int.Parse(Console.ReadLine() ?? string.Empty);
 
 string dias = mes switch
