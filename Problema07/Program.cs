@@ -1,3 +1,4 @@
+Console.Write("Ingrese un número entero: ");
 int numero = int.Parse(Console.ReadLine() ?? string.Empty);
 
 if (numero > 0)
