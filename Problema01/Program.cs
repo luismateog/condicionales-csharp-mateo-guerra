@@ -1,9 +1,3 @@
-﻿using System;
-Console.WriteLine("Cual es tu edad(numeros enteros): ");
-byte edad = byte.Parse(Console.ReadLine());
-
-string mensagge = (edad >= 16) ? "Puede votar" : "Aun no puede votar";
-
-Console.WriteLine(mensagge);
-
-
+int edad = int.Parse(Console.ReadLine() ?? string.Empty);
+string mensaje = edad >= 16 ? "Puede votar" : "Aún no puede votar";
+Console.WriteLine(mensaje);
